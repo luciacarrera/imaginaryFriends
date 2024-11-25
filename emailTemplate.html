@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <style>
+        td {
+            padding: 0px 15px 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>{{ content.subject }} </h2>
+    <p>Querida {{ content.giver }},
+        <br>
+        <br>🦌🛷🎅🏻 ¡Llega la Navidad! 🎄❄️☃️
+        <br>Y con ella la cena y el amigo invisible anual ❤︎
+        <br>
+        <br>En este correo le resolveremos todas las dudas que pueda tener...
+    </p>
+    <table>
+        <tr>
+            <td>⏰</td>
+            <td>¿Cuándo?</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>El <b>{{ content.date }}</b> de {{ content.month }} a las <b>{{ content.time }}</b>.</td>
+        </tr>
+        <tr>
+            <td>📍</td>
+            <td>¿Dónde?</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>En <b>{{ content.place }}</b>, {{ content.address }}.</td>
+        </tr>
+        <tr>
+            <td>🎁</td>
+            <td>¿Qué llevo?</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Sus mejores galas y un regalo <b>entre {{ content.min }} y {{ content.max }} euros</b>.</td>
+        </tr>
+        <tr>
+            <td>🌟</td>
+            <td>¿Para?</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><b>¡{{ content.receiver }}!</b></td>
+        </tr>
+    </table>
+    <br>
+    <p>¡Un besazo y nos vemos allí!</p>
+</body>
+
+</html>
